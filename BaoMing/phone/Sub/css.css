@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.ui-footer-btn{ color: #015501; }
+.ui-tab-nav li.current{ color: #015501; border-color: #015501; }
+
+.ui-header{ position: relative; }
+.navigation table { background: #0d7434; width: 100%; margin: 0px auto; border-spacing: 1px; border-collapse: separate;}
+.navigation td{background:#109141; /*单元格底色*/}
+.navigation a{ line-height:35px;font-size:1.2em;color:#fff;overflow:hidden;display:block;text-align:center;}
+.navigation a.current{ background:#0d7434; color:#FFF;}
+.ui-slider{ padding-top: 44.2%; }
+
+.demo-desc{ padding: 10px; font-size: 16px; color: #7CAE23; }
+
+.container_title{ background: #fff; font-size:16px; }
+.container_title h3{ 
+    height: 45px;
+    line-height: 45px;
+    min-width: 70px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    color: #777;
+    box-sizing: border-box;
+    border-bottom: 2px solid #015501;
+    padding-left: 10px;
+} 
+.container_title .link_more{ display: inline-block; height: 45px; line-height: 45px; float: right; padding-right: 10px; color: #015501; }
+
+/*文本列表*/
+.textlist li{background:url(../images/textlist.gif) 5px center no-repeat; text-indent:18px;padding: 5px 0px; 
+text-overflow:ellipsis; white-space:nowrap;border-bottom:1px dotted #999999;
+}
+.textlist li.first{ background:none; padding:10px 20px;}
+.textlist li .InfoTime{ display: none;}
+.textlist li .InfoContent{ font-size:14px; color:#696868; white-space:normal}
+.textlist li img{ float:left; width:85px; margin-right:5px; border:1px solid #3A8C8A; }
+
+/*带缩略图文本列表*/
+.thumblist li{padding: 5px 0px; text-overflow:ellipsis;white-space:nowrap;border-bottom:1px dotted #999999;height:90px; }
+.thumblist li  img{ float:left; height:90px; margin-right:5px; border:1px solid #167312; }
+.thumblist li .InfoContent{ font-size:14px; color:#CCCCCC; white-space:normal; text-overflow:ellipsis; line-height:1.2em}
+
+.bot_link_more{ width: 50%; background: #f1f2e8; text-align: center; color: #; padding: 12px 0; display: block; margin:10px auto; }
+
+
+
+/**
+ * 选项卡
+ */
+.ui_tab {
+  width: 100%;
+  overflow: hidden; }
+
+.ui_tab_nav {
+  width: 100%;
+  background-color: #fff;
+  display: box;
+  display: -webkit-box;
+  font-size: 16px;
+  height: 45px;
+  box-sizing: border-box; }
+
+.ui_tab_content {
+  display: -webkit-box; }
+
+.ui_tab_content > li {
+  -webkit-box-flex: 1;
+  width: 100%; }
+
+.ui_tab_nav li {
+  height: 45px;
+  line-height: 45px;
+  min-width: 70px;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #777;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  width: 100%; }
+
+.ui_tab_nav li.current {
+  color: #015501;
+  border-bottom: 2px #015501 solid; }
+
+.ui-tab_nav li:active {
+  opacity: .8; }
+
+
+.ui_tab_content_item{ display: none; }
+.ui_tab_content_item:first-child{ display: block; }
+
+.index_header{ 
+      background: #fff;
+    padding: 12px 10px;
+    border-bottom: 1px #d8d8d8 solid;
+    position: relative;
+ }
+
+
+/*当前位置*/
+#location{ padding:6px 0px;margin: 0; border-bottom: 1px solid #1F6260;color:#1F6260;  height:1.5em; line-height:1.5em; clear:both; text-indent:3px;}
+#location a{color:#1F6260}
+
+.details h1{ text-align: center; color: #015501; padding: 30px 20px 10px; font-size:18px; font-weight: bold; }
+.details .public_time{ color: #666; text-align: center; font-size:14px; padding:0; }
+.details_content{ padding: 30px 20px;  color: #333;}
+.details_content p{ text-indent: 2em; margin-bottom:10px; }
+
+.reg_panel{  background: #fff; }
+
+.steven_block{ padding: 20px; }
+.steven_block ol{ padding-left: 20px;}
+.steven_block ol li{ list-style:decimal; font-size: 15px; line-height: 20px; padding-bottom: 8px; color: #333; } 
+
+.steven_item p{ margin-left:30px; }
+.steven_item h3{ margin-top:10px; }
+.steven_item h4{ margin-bottom:5px; margin-top:10px; }
+.steven_item ol{ margin-left:30px; padding-top: 10px; }
+.steven_item ol li{ padding-bottom: 3px; }
+
+
+.banfa_container{  padding: 20px; }
+.banfa_container h1,.banfa_container h2,.banfa_container h5{ text-align: center; font-weight: bold; }
+.banfa_container h2{ padding-bottom: 10px; padding-top: 10px; }
+.banfa_container h3{ text-indent: 2em; padding-bottom: 5px; font-size:15px; padding-top: 5px; }
+.fanfa_title{ padding-bottom:30px; }
+.banfa_container ol{ padding-left: 40px;}
+.banfa_container ol li{  list-style:decimal; font-size: 15px; line-height: 20px; padding-bottom: 8px; color: #333;}

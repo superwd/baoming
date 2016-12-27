@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40BBC7B0-82C4-49FA-ACB9-7B7FDEC4F965}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaoMing</RootNamespace>
+    <AssemblyName>BaoMing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.4.5.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="css\actionsheet.css" />
+    <Content Include="css\arrowlink.css" />
+    <Content Include="css\avatar.css" />
+    <Content Include="css\badge.css" />
+    <Content Include="css\basic.css" />
+    <Content Include="css\border.css" />
+    <Content Include="css\btn-group.css" />
+    <Content Include="css\btn-progress.css" />
+    <Content Include="css\btn.css" />
+    <Content Include="css\checkbox.css" />
+    <Content Include="css\css.css" />
+    <Content Include="css\dialog.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\frozen.css" />
+    <Content Include="css\full.css" />
+    <Content Include="css\global.css" />
+    <Content Include="css\grid.css" />
+    <Content Include="css\icon-full.css" />
+    <Content Include="css\icon.css" />
+    <Content Include="css\input.css" />
+    <Content Include="css\justify.css" />
+    <Content Include="css\label.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\list.css" />
+    <Content Include="css\loading.css" />
+    <Content Include="css\mixin.css" />
+    <Content Include="css\newstips.css" />
+    <Content Include="css\notice.css" />
+    <Content Include="css\nowrap.css" />
+    <Content Include="css\panel.css" />
+    <Content Include="css\placehold.css" />
+    <Content Include="css\poptips.css" />
+    <Content Include="css\progress.css" />
+    <Content Include="css\radio.css" />
+    <Content Include="css\reddot.css" />
+    <Content Include="css\rem.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\searchbar.css" />
+    <Content Include="css\select.css" />
+    <Content Include="css\selector.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\switch.css" />
+    <Content Include="css\tab.css" />
+    <Content Include="css\table.css" />
+    <Content Include="css\tag.css" />
+    <Content Include="css\tips-news.css" />
+    <Content Include="css\tips.css" />
+    <Content Include="css\tooltips.css" />
+    <Content Include="css\type.css" />
+    <Content Include="css\ui-btn-vip.css" />
+    <Content Include="css\ui-icon-qq.css" />
+    <Content Include="css\ui-icon-qqlevel.css" />
+    <Content Include="css\ui-icon-viplevel.css" />
+    <Content Include="css\ui-tooltips-vip.css" />
+    <Content Include="css\variable.css" />
+    <Content Include="css\vip.css" />
+    <Content Include="css\whitespace.css" />
+    <Content Include="Global.asax" />
+    <Content Include="phone\css\actionsheet.css" />
+    <Content Include="phone\css\arrowlink.css" />
+    <Content Include="phone\css\avatar.css" />
+    <Content Include="phone\css\badge.css" />
+    <Content Include="phone\css\basic.css" />
+    <Content Include="phone\css\border.css" />
+    <Content Include="phone\css\btn-group.css" />
+    <Content Include="phone\css\btn-progress.css" />
+    <Content Include="phone\css\btn.css" />
+    <Content Include="phone\css\checkbox.css" />
+    <Content Include="phone\css\dialog.css" />
+    <Content Include="phone\css\form.css" />
+    <Content Include="phone\css\frozen.css" />
+    <Content Include="phone\css\full.css" />
+    <Content Include="phone\css\global.css" />
+    <Content Include="phone\css\grid.css" />
+    <Content Include="phone\css\icon-full.css" />
+    <Content Include="phone\css\icon.css" />
+    <Content Include="phone\css\input.css" />
+    <Content Include="phone\css\justify.css" />
+    <Content Include="phone\css\label.css" />
+    <Content Include="phone\css\layout.css" />
+    <Content Include="phone\css\list.css" />
+    <Content Include="phone\css\loading.css" />
+    <Content Include="phone\css\mixin.css" />
+    <Content Include="phone\css\newstips.css" />
+    <Content Include="phone\css\notice.css" />
+    <Content Include="phone\css\nowrap.css" />
+    <Content Include="phone\css\panel.css" />
+    <Content Include="phone\css\placehold.css" />
+    <Content Include="phone\css\poptips.css" />
+    <Content Include="phone\css\progress.css" />
+    <Content Include="phone\css\radio.css" />
+    <Content Include="phone\css\reddot.css" />
+    <Content Include="phone\css\rem.css" />
+    <Content Include="phone\css\reset.css" />
+    <Content Include="phone\css\searchbar.css" />
+    <Content Include="phone\css\select.css" />
+    <Content Include="phone\css\selector.css" />
+    <Content Include="phone\css\slider.css" />
+    <Content Include="phone\css\switch.css" />
+    <Content Include="phone\css\tab.css" />
+    <Content Include="phone\css\table.css" />
+    <Content Include="phone\css\tag.css" />
+    <Content Include="phone\css\tips-news.css" />
+    <Content Include="phone\css\tips.css" />
+    <Content Include="phone\css\tooltips.css" />
+    <Content Include="phone\css\type.css" />
+    <Content Include="phone\css\ui-btn-vip.css" />
+    <Content Include="phone\css\ui-icon-qq.css" />
+    <Content Include="phone\css\ui-icon-qqlevel.css" />
+    <Content Include="phone\css\ui-icon-viplevel.css" />
+    <Content Include="phone\css\ui-tooltips-vip.css" />
+    <Content Include="phone\css\variable.css" />
+    <Content Include="phone\css\vip.css" />
+    <Content Include="phone\css\whitespace.css" />
+    <Content Include="phone\img\6x10led主屏.jpg" />
+    <Content Include="phone\img\foc.jpg" />
+    <Content Include="phone\Sub\A3座次表.jpg" />
+    <Content Include="phone\Sub\BanFa.aspx" />
+    <Content Include="phone\Sub\css.css" />
+    <Content Include="phone\Sub\Detail.aspx" />
+    <Content Include="phone\Sub\MingDan.aspx" />
+    <Content Include="phone\Sub\SubForm.aspx" />
+    <Content Include="phone\Sub\SubForm2.aspx" />
+    <Content Include="phone\Sub\tips.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="font\iconfont-full.ttf" />
+    <Content Include="font\iconfont.ttf" />
+    <Content Include="phone\font\iconfont-full.ttf" />
+    <Content Include="phone\font\iconfont.ttf" />
+    <None Include="Properties\PublishProfiles\baoming.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="phone\Sub\ValidNums.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="T_Login.aspx" />
+    <Content Include="Users\assets\css\admin.css" />
+    <Content Include="Users\assets\css\amazeui.css" />
+    <Content Include="Users\assets\css\amazeui.flat.css" />
+    <Content Include="Users\assets\css\amazeui.flat.min.css" />
+    <Content Include="Users\assets\css\amazeui.min.css" />
+    <Content Include="Users\assets\css\app.css" />
+    <Content Include="Users\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Users\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Users\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Users\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Users\assets\fonts\FontAwesome.otf" />
+    <Content Include="Users\assets\i\app-icon72x72%402x.png" />
+    <Content Include="Users\assets\i\examples\admin-chrome.png" />
+    <Content Include="Users\assets\i\examples\admin-firefox.png" />
+    <Content Include="Users\assets\i\examples\admin-ie.png" />
+    <Content Include="Users\assets\i\examples\admin-opera.png" />
+    <Content Include="Users\assets\i\examples\admin-safari.png" />
+    <Content Include="Users\assets\i\examples\adminPage.png" />
+    <Content Include="Users\assets\i\examples\blogPage.png" />
+    <Content Include="Users\assets\i\examples\landing.png" />
+    <Content Include="Users\assets\i\examples\landingPage.png" />
+    <Content Include="Users\assets\i\examples\loginPage.png" />
+    <Content Include="Users\assets\i\examples\sidebarPage.png" />
+    <Content Include="Users\assets\i\favicon.png" />
+    <Content Include="Users\assets\i\startup-640x1096.png" />
+    <Content Include="Users\assets\js\amazeui.ie8polyfill.js" />
+    <Content Include="Users\assets\js\amazeui.ie8polyfill.min.js" />
+    <Content Include="Users\assets\js\amazeui.js" />
+    <Content Include="Users\assets\js\amazeui.min.js" />
+    <Content Include="Users\assets\js\amazeui.widgets.helper.js" />
+    <Content Include="Users\assets\js\amazeui.widgets.helper.min.js" />
+    <Content Include="Users\assets\js\app.js" />
+    <Content Include="Users\assets\js\handlebars.min.js" />
+    <Content Include="Users\UserList.aspx" />
+    <Content Include="Users\Web.config" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\BanFa.aspx.cs">
+      <DependentUpon>BanFa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\BanFa.aspx.designer.cs">
+      <DependentUpon>BanFa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\MingDan.aspx.cs">
+      <DependentUpon>MingDan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\MingDan.aspx.designer.cs">
+      <DependentUpon>MingDan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\SubForm.aspx.cs">
+      <DependentUpon>SubForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\SubForm.aspx.designer.cs">
+      <DependentUpon>SubForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\SubForm2.aspx.cs">
+      <DependentUpon>SubForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\SubForm2.aspx.designer.cs">
+      <DependentUpon>SubForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phone\Sub\ValidNums.aspx.cs">
+      <DependentUpon>ValidNums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phone\Sub\ValidNums.aspx.designer.cs">
+      <DependentUpon>ValidNums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_Login.aspx.cs">
+      <DependentUpon>T_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="T_Login.aspx.designer.cs">
+      <DependentUpon>T_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityManage\EntityManage.csproj">
+      <Project>{8b8b26d5-834a-4a7a-9db7-9fcb1fd5c50f}</Project>
+      <Name>EntityManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31728</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31728/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>山东省农产品品牌建设大会</title>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body ontouchstart>
+        <header class="ui-header ui-header-positive ui-border-b">
+            <!-- <i class="ui-icon-return" onclick="history.back()"></i> -->
+            <h1>山东省农产品品牌建设大会</h1>
+            <!-- <button class="ui-btn">回首页</button> -->
+            
+        </header>
+        <section class="ui-container">
+            <p class="demo-desc">参会人信息</p>
+            <div class="reg_panel">
+                <div class="demo-block">
+                    <div class="ui-form ui-border-t">
+                        <form action="#">
+                            <div class="ui-form-item ui-border-b">
+                                <label>
+                                    姓名
+                                </label>
+                                <input type="text" placeholder="请填写真实姓名">
+                                <a href="#" class="ui-icon-close">
+                                </a>
+                            </div>
+                            <div class="ui-form-item ui-form-item-textarea ui-border-b">
+                                <label>
+                                    单位
+                                </label>
+                                <textarea placeholder="请填写单位名称"></textarea>
+                            </div>
+                            <div class="ui-form-item ui-border-b">
+                                <label>地市</label>
+                                <div class="ui-select">
+                                    <select>
+                                        <option>省直</option>
+                                        <option selected="">济南</option>
+                                        <option>青岛</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ui-form-item ui-form-item-l ui-border-b">
+                                <label class="ui-border-r">
+                                    中国 +86
+                                </label>
+                                <input type="text" placeholder="请输入手机号码">
+                                <a href="#" class="ui-icon-close">
+                                </a>
+                            </div>
+                            <div class="ui-form-item ui-border-b">
+                                <label>
+                                    电子邮箱
+                                </label>
+                                <input type="text" placeholder="请填写电子邮箱">
+                                <a href="#" class="ui-icon-close">
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ui-btn-wrap">
+                        <button class="ui-btn-lg ui-btn-primary">
+                            提交报名
+                        </button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        
+       
+        
+
+
+
+
+
+        <script src="../lib/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+
+            <script>
+                (function (){
+
+                    $('#ui_tab .ui_tab_nav li').click(function(){
+                        $(this).addClass('current').siblings().removeClass('current');
+                        $('#ui_tab .ui_tab_content .ui_tab_content_item').eq($(this).index()).show().siblings().hide();
+                        return false;
+                    });
+                    $('#ui_tab2 .ui_tab_nav li').click(function(){
+                        $(this).addClass('current').siblings().removeClass('current');
+                        $('#ui_tab2 .ui_tab_content .ui_tab_content_item').eq($(this).index()).show().siblings().hide();
+                        return false;
+                    });
+                    $('#ui_tab3 .ui_tab_nav li').click(function(){
+                        $(this).addClass('current').siblings().removeClass('current');
+                        $('#ui_tab3 .ui_tab_content .ui_tab_content_item').eq($(this).index()).show().siblings().hide();
+                        return false;
+                    });
+
+                    var slider = new fz.Scroll('.ui-slider', {
+                        role: 'slider',
+                        indicator: true,
+                        autoplay: true,
+                        interval: 3000
+                    });
+
+                    slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                        console.log(fromIndex,toIndex)
+                    });
+
+                    slider.on('scrollEnd', function(cruPage) {
+                        console.log(cruPage)
+                    });
+
+
+                })();
+        </script>
+    </body>
+</html>
