@@ -29,6 +29,7 @@ namespace BaoMing
                     if (UserId == "admin" && UserPwd == "123456")
                     {
                         list = "1";
+
                     }
                 }
                 else
